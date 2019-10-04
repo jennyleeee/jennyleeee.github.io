@@ -9,7 +9,7 @@ remote_theme : jekyller/jasper2
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 url: "https://jennyleeee.github.io"
-baseurl: /portfolio/
+baseurl: ""
 
 # Website info
 title: Ghost
