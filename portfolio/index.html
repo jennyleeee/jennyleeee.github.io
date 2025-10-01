@@ -157,8 +157,7 @@ into the {body} of the default.hbs template -->
   <li><a href="#프로젝트요약">2. 프로젝트 요약</a></li>
   <li><a href="#경험기술">3. 경험 기술</a></li>
   <li><a href="#경력기술서">4. 경력 기술서</a></li>
-  <li><a href="#프로젝트기술서">5. 프로젝트 기술서</a></li>
-  <li><a href="#학력">6. 학력</a></li>
+  <li><a href="#학력">5. 학력</a></li>
 </ul>
 
 <h1 id="profile">1. 프로필</h1>
@@ -166,7 +165,6 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>Name : 이 자 은 </li>
   <li>Phone : 010-7232-8359</li>
-  <li><a href="https://github.com/jennyleeee/">GitHub 바로가기</a></li>
   <li>E-mail : jjaeun2@naver.com</li>
 </ul>
 
@@ -177,9 +175,6 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>'펫프렌즈' Backend 개발 (2021.12-재직중) </li>
   <li>'UserHabit' Backend 개발 (2019.12-2021.07)</li>
-  <li>'Memo' Backend 개발 (2021.09-진행중)</li>
-  <li>‘Lagom Furniture’ Web 개발 (2019.06-2019.09)</li>
-  <li>‘Crowd Funding’ Web 개발 (2018.06-2018.07)</li>
 </ul>
 
 <hr />
@@ -187,10 +182,9 @@ into the {body} of the default.hbs template -->
 <h1 id="경험기술">3. 경험 기술</h1>
 
 <ul>
-    <li>Client : Android, Vue.js</li>
-  <li>Back-End : Spring-boot(kotlin, java) & Webflux, Koa(Node.js), Python </li>
-  <li>Database : MongoDB, PostGreSQL, MySQL, MariaDB, DynamoDB </li>
-  <li>Etc. : AWS (EC2, S3, CLI tool), ElasticSearch, HDFS, Kafka, Naver Cloud Platform, Git, Notion, Jira </li>
+  <li>Back-End : Spring-boot(kotlin, java) & Webflux, Koa(Node.js), Kafka, AWS (EKS, ECS, EC2, S3) </li>
+  <li>Database : MongoDB (DocumentDB), MariaDB, DynamoDB </li>
+  <li>Etc. : Git, Notion, Jira </li>
 </ul>
 
 <hr />
@@ -198,16 +192,47 @@ into the {body} of the default.hbs template -->
 <h1 id="경력기술서">4. 경력 기술서</h1>
 <br/>
 <h2 id="40-pet-freins-backend-개발">펫프렌즈 2021.12 - 재직중 </h2>
-<h4 id="펫프렌즈-서비스"> 반려동물 쇼핑몰 </h4>
+<h4 id="펫프렌즈-서비스"> 반려동물 사료, 간식, 용품 커머스 서비스 </h4>
 <br/>
 <ul>
-    <h4 id="commerce"> 펫프렌즈 기존 서비스 유지 보수 및 개발 </h4>
-    <li> Koa 프레임워크 (node.js), Python, Springboot(java) 백엔드 개발 </li>
-    <li> 반려동물 등록대행 프로젝트 TF 참여 - 반려동물 등록 프로세스 APIg 개발, 어드민 API 개발, 사용자 민감정보 암호화 처리, Batch(python) 적용</li>
-    <li> 커머스 카테고리 DB 고도화 - 커머스 카테고리 세분화 (비정형 데이터 DynamoDB 적재 및 API 개발) </li>
+    <h4 id="msa"> MSA 전환 (2023.04~진행중) </h4>
+    <li> CQRS 패턴 및 WebFlux 프레임워크를 도입하여 모놀리식 구조를 MSA 구조로 전환 </li>
+    <li> Server Driven UI 설계로 클라이언트 배포 없이 UI 변경 가능한 구조 구축 </li>
+    <li> Node.js → Java (Spring Boot + WebFlux) 기술 스택 현대화 </li>
+    <li> RDS → DocumentDB 전환, CDC(Change Data Capture) 구현으로 데이터 일관성 보장 </li>
+    <br/>
+    <h4 id="ab-test"> 데이터 기반 A/B 테스트 및 기능 개발 (2021.12~진행중) </h4>
+    <li> 실험 중 80% 이상이 전체 롤아웃에 성공하여 데이터 기반 의사결정 프로세스 검증 </li>
+    <li> 상품 썸네일 GIF 전환 실험, 성능 최적화를 위해 WebP 파일 형식 도입 제안 </li>
+    <li> 쿠폰 할인가 노출 실험 및 쿠폰 이벤트 동기화 처리 </li>
+    <br/>
+    <h4 id="recommendation"> 개인화 추천 시스템 기능 개발 (2023.04~진행중) </h4>
+    <li> 외부 추천 서비스와 실시간 연동 및 데이터 전송 구현 </li>
+    <li> 추천 상품 및 커뮤니티 게시글 전시 영역 노출 기능 개발 </li>
+    <br/>
+    <h4 id="coffee"> 사내 커피 주문 시스템 고도화 (2024.04~2025.03) </h4>
+    <li> Go → Kotlin 언어 마이그레이션으로 팀 기술 스택 통합 </li>
+    <li> EC2-Docker → ECS 전환 및 배포 자동화 </li>
+    <li> Kotest 도입으로 Kotlin 친화적인 테스트 환경 구축 </li>
+    <br/>
+    <h4 id="confluent"> Confluent Cloud PoC (2025.06~2025.08) </h4>
+    <li> Debezium 커넥터 연결 및 CDC 동작 확인, 기존 시스템 영향도 분석 </li>
+    <li> Kafka 메시지 produce/consume 로직 구현 및 성능 테스트 </li>
+    <br/>
+    <h4 id="category"> 카테고리/필터 DB 고도화 (2022.04~2022.11) </h4>
+    <li> 비정규화 데이터 모델 설계, DynamoDB에서 DocumentDB로 마이그레이션 </li>
+    <li> DocumentDB 전환으로 조회 쿼리 성능 2.6배 개선 </li>
+    <br/>
+    <h4 id="pet-registration"> 반려동물 국가 등록 대행 (2022.01~2022.03) </h4>
+    <li> 유저 서명 이미지 KMS 암호화 적용 및 S3 업로드 </li>
+    <li> 등록 신청, 진행 상태 조회 API 개발 및 어드민 백오피스 구축 </li>
+    <br/>
+    <h4 id="legacy"> 레거시 시스템 운영 (2021.12~진행중) </h4>
+    <li> Node.js Koa 프레임워크 기반 어드민 및 기존 서비스 유지보수 </li>
+    <li> MSA 전환 로드맵에 따른 점진적 마이그레이션 진행 </li>
     <br/>
     <h4 id="사용-기술"> 사용 기술</h4>
-    <li> AWS(EC2, S3, RDS, DynamoDB), Springboot(Java), Koa(Node.js), Python</li>
+    <li> Kafka, Springboot(Java, Kotlin), Webflux, Koa(Node.js), DocumentDB, MariaDB, DynamoDB, AWS(ECS, EC2, S3, RDS) </li>
     <br/>
 </ul>
 
@@ -228,144 +253,12 @@ into the {body} of the default.hbs template -->
     <li> Ruby on Rails / Coffee Script - 웹 사이트 유지 보수</li>
     <br/>
     <h4 id="사용-기술"> 사용 기술</h4>
-    <li> AWS(EC2, S3, RDS), Java, Scala, PostGreSQL, MongoDB, ElasticSearch, HDFS, Kafka, Vue.js, RubyOnRails, CoffeeScript</li>
+    <li> AWS(EC2, S3, RDS), Java, Scala, MongoDB, ElasticSearch, HDFS, Kafka</li>
     <br/>
 </ul>
 
 <hr />
-
-<h1 id="프로젝트기술서">5. 프로젝트 기술서</h1>
-
-<br/>
-<h2 id="41-Memo-backend-개발">5.1 Memo BackEnd 개발</h2>
-<h3 id="기간-202108-진행중">기간 : 2021.09 - 진행중</h3>
-<h3 id="메모-서비스"> Todo Memo를 관리할 수 있는 서비스. Android 개발자와 협업.</h3>
-<br/>
-<ul>
-    <h3 id="깃헙-주소">GitHub</h3>
-    <li><a href="https://github.com/sleepyhead-developer/memo-server"> Memo - GitHub 바로가기</a></li>
-    <br/>
-
-    <h3 id="주요-기능"> 주요 기능</h3>
-    <li> 사용자 관리, 메모 CRUD, Andorid - firebase - server 연동 </li>
-    <br/>
-    <h3 id="사용-기술"> 사용 기술</h3>
-    <li> Kotlin, Springboot + Webflux, EC2, MariaDB</li>
-<br/>
-</ul>
-
-<!--<h2 id="42-LagomFurniture-app-개발-android-개발">5.2 ‘LagomFurniture’ App. 개발 (Android 개발)</h2>-->
-<!--<h3 id="기간-201909">기간 : 2019.09</h3>-->
-<!--<h3 id="쇼핑몰-주요기능이있는-앱-개발">쇼핑몰 주요 기능이 있는 앱 서비스 설계 및 개발</h3>-->
-<!--<br/>-->
-<!--<ul>-->
-<!--	<h3 id="깃헙-주소">GitHub</h3>-->
-<!--	  <li><a href="https://github.com/jennyleeee/lagomfurniture_android">LagomFurniture App - GitHub 바로가기</a></li>-->
-<!--	<br/>-->
-<!--<h3 id="주요-기능">주요 기능</h3>-->
-<!--<li> MVVM 패턴 사용</li>-->
-<!--<li> 이메일 회원가입, 로그인</li>-->
-<!--&lt;!&ndash; <li> OAuth2 SNS 로그인(카카오)</li> &ndash;&gt;-->
-<!--<br/>-->
-<!--<h4 id="사용-기술-1">사용 스택</h4>-->
-<!--<li>Android, Java, MVVM, Git, GitHub, Retrofit2, Glide</li>-->
-<!--<br/>-->
-<!--<h3 id="스크린샷-1">스크린샷</h3>-->
-<!--</ul>-->
-
-<!-- <p><img src="/assets/portfolio/image019.jpg" alt="bikenavi1" />
-<img src="/assets/portfolio/image020.png" alt="bikenavi2" />
-<img src="/assets/portfolio/image021.png" alt="bikenavi3" />
-<img src="/assets/portfolio/image022.png" alt="bikenavi4" />
-<img src="/assets/portfolio/image023.png" alt="bikenavi5" /></p> -->
-<!--<img class="portfolioimage" src="/assets/portfolio/lagomfurniture_android/splash.jpg" alt="lagomfurniture_android1" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/lagomfurniture_android/login.jpg" alt="lagomfurniture_android2" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/lagomfurniture_android/main.jpg" alt="lagomfurniture_android3" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/lagomfurniture_android/navigation_drawer.jpg" alt="lagomfurniture_android4" />-->
-<!--<div style="clear:both;">	</div>-->
-
-<h2 id="42-LagomFurniture-web-개발-backend-개발">5.2 ‘LagomFurniture’ Web. 개발 (Back-End 개발)</h2>
-<h3 id="기간-201906-201909">기간 : 2019.06 ~ 2019.09</h3>
-<h3 id="쇼핑몰-주요기능이있는-웹-개발">쇼핑몰 주요 기능이 있는 웹 서비스 설계 및 개발</h3>
-<br/>
-<ul>
-<h3 id="깃헙-주소">GitHub</h3>
-  <li><a href="https://github.com/LimHanGyeol/lagomfurniture">LagomFurniture Web - GitHub 바로가기</a></li>
-<br/>
-<h3 id="주요-기능">주요 기능</h3>
-<li> MVC 패턴 사용 </li>
-<li> 상품 CRUD </li>
-<li> OAuth2 SNS 로그인(카카오)</li>
-<li> 카카오 페이 API</li>
-
-<br/>
-<h4 id="사용-기술-1">사용 기술</h4>
-<li>AWS EC2, Linux(Ubuntu), Spring Boot, MariaDB, Java, MVC, JPA, HTML5, Thymeleaf, Git, GitHub</li>
-	<br/>
-</ul>
-
-
-<!--<h2 id="43-asap-app-개발-android-개발">5.4 ‘Flower’ App 개발 (Android)</h2>-->
-<!--<h3 id="기간&#45;&#45;201808&#45;&#45;201811">기간 : 2018.08 ~ 2018.11</h3>-->
-<!--<h3 id="장소-공유-sns-서비스"> 꽃 주문 앱 서비스 </h3>-->
-<!--<br/>-->
-<!--<ul>-->
-<!--<h3 id="깃헙-주소">GitHub</h3>-->
-<!--  <li><a href="https://github.com/jennyleeee/flower">Flower - GitHub 바로가기</a></li>-->
-<!--	<br/>-->
-<!--  <h3 id="주요-기능">주요 기능</h3>-->
-<!--	<li> 이메일 회원가입, 로그인</li>-->
-<!--	<li> SNS 로그인 (Kakao API, FaceBook API)</li>-->
-<!--	<li> 문자인식 (Tesseract) </li>-->
-<!--	<li> 피드 이미지 여러장 보여주기</li>-->
-<!--	<li> TCP/IP 채팅, 이미지 전송</li>-->
-<!--	<li> 3D 모델링 (3DF Zephyr, Autodesk) 후 AR 적용 (Unity)</li>-->
-<!--	<li> Tmap API 길찾기, 가게 위치 확인</li>-->
-<!--	<li> 이미지 필터 (NDK, OpenCV) </li>-->
-<!--<br/>-->
-<!--<h4 id="사용-기술-1">사용 스택</h4>-->
-<!--<li>Naver Cloud Platform, Linux(Ubuntu), Apache, PHP, MySQL, Android, Java, TCP/IP, GitHub, OpenCV, NDK, Tesseract OCR</li>-->
-<!--	<br/>-->
-<!--	<h3 id="스크린샷-2">스크린샷</h3>-->
-<!--</ul>-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/login.jpg" alt="flower1" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/facebooklogin.jpg" alt="flower2" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/facebooklogin2.jpg" alt="flower3" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/main.jpg" alt="flower4" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/filtering.jpg" alt="flower5" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/daumaddress.jpg" alt="flower6" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/tmap.jpg" alt="flower7" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/review.jpg" alt="flower8" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/chatting.jpg" alt="flower9" />-->
-<!--<img class="portfolioimage" src="/assets/portfolio/flower/3dUnity.jpg" alt="flower10" />-->
-<!--<div style="clear:both;">	</div>-->
-<!--<br/>-->
-
-
-<h2 id="44-boa-web-개발-backend-개발">5.3	‘Crowd Funding’ Web 개발 </h2>
-<h3 id="기간--201808--201811">기간 : 2018.06 ~ 2018.07</h3>
-<h3 id="문화생활-정보공유-서비스">크라우드 펀딩 웹 서비스</h3>
-<br/>
-
-<ul>
-	<h3 id="깃헙-주소">Github</h3>
-	  <li><a href="https://github.com/jennyleeee/crowdfunding">Crowd Funding - Github 바로가기</a></li>
-		<br/>
-  <h3 id="주요-기능">주요 기능</h3>
-	<li> 이메일 회원가입, 로그인</li>
-	<li> 모달 및 페이징</li>
-	<li> 아임포트 결제모듈 API</li>
-<br/>
-<h4 id="사용-기술-1">사용 기술</h4>
-<li> Linux(Ubuntu), Apache, PHP, MySQL, Bootstrap, Ajax, GitHub</li>
-	<br/>
-	
-  <h3 id="프로그램-시연-1">프로젝트 시연 영상</h3>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qyApc7yj4ZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</ul>
-<hr />
-<h1 id="학력">6. 학력</h1>
+<h1 id="학력">5. 학력</h1>
 
 <ul>
   <li>백석대학교 관광경영학 졸업 3.94/4.5 (2011.03 ~ 2015.02)</li>
