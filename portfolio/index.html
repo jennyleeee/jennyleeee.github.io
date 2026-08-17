@@ -1,405 +1,310 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
 <head>
-
-    <!-- Document Settings -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Base Meta -->
-    <!-- dynamically fixing the title for tag/author pages -->
-
-    <title>Portfolio</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <!-- 웹 폰트 설정 -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
-    <style>.hljs { background: none; }</style>
-
-    <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="Development & Technical Training" />
-    <link rel="shortcut icon" href="https://jennyleeee.github.io/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://jennyleeee.github.io/portfolio/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-
-     <!--title below is coming from _includes/dynamic_title-->
-    <meta property="og:site_name" content="Jaeun Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Portfolio" />
-    <meta property="og:description" content="Development & Technical Training" />
-    <meta property="og:url" content="https://jennyleeee.github.io/portfolio/" />
-    <meta property="og:image" content="https://jennyleeee.github.io/assets/images/welcome.jpg" />
-    <meta property="article:publisher" content="https://www.facebook.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Portfolio" />
-    <meta name="twitter:description" content="Development & Technical Training" />
-    <meta name="twitter:url" content="https://jennyleeee.github.io/" />
-    <meta name="twitter:image" content="https://jennyleeee.github.io/assets/images/welcome.jpg" />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="Jaeun Portfolio" />
-    <meta name="twitter:site" content="@" />
-    <meta name="twitter:creator" content="@" />
-    <meta property="og:image:width" content="2000" />
-    <meta property="og:image:height" content="666" />
-
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Portfolio",
-        "logo": "https://jennyleeee.github.io/"
-    },
-    "url": "https://jennyleeee.github.io/portfolio/",
-    "image": {
-        "@type": "ImageObject",
-        "url": "https://jennyleeee.github.io/assets/images/welcome.jpg",
-        "width": 2000,
-        "height": 666
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://jennyleeee.github.io/portfolio/"
-    },
-    "description": "Development & Technical Training"
-}
-    </script>
-
-    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
-    <script type="text/javascript">
-    ghost.init({
-    	clientId: "ghost-frontend",
-    	clientSecret: "f84a07a72b17"
-    });
-    </script> -->
-
-    <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Portfolio" href="/feed.xml" />
-		<style rel="stylesheet">
-		 div .portfolioimage {
-				margin-right: 10px;
-				float: left;
-			}
-		</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f5">
+    <title>이자은 | Backend Engineer</title>
+    <meta name="description" content="커머스와 데이터 플랫폼을 개발·운영해 온 6년 이상의 백엔드 개발자 이자은의 포트폴리오입니다.">
+    <link rel="canonical" href="https://jennyleeee.github.io/portfolio/">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="이자은 포트폴리오">
+    <meta property="og:title" content="이자은 | Backend Engineer">
+    <meta property="og:description" content="데이터 흐름과 운영 안정성까지 설계하는 백엔드 개발자입니다.">
+    <meta property="og:url" content="https://jennyleeee.github.io/portfolio/">
+    <meta property="og:image" content="https://jennyleeee.github.io/assets/images/profile.jpg">
 </head>
-<body class="page-template">
+<body>
+    <a class="skip-link" href="#content">본문으로 이동</a>
 
-    <div class="site-wrapper">
-        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
-
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer">
-    <div class="inner">
-        <nav class="site-nav">
-    <div class="site-nav-left">
-
-
-                <a class="site-nav-logo" href="https://jennyleeee.github.io">Jaeun Portfolio</a>
-
-
-
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
-    <li class="nav-portfolio" role="menuitem"><a href="/portfolio/">Portfolio</a></li>
-    <li class="nav-android" role="menuitem"><a href="/android/">android</a></li>
-		<li class="nav-backend" role="menuitem"><a href="/backend/">Portfolio</a></li>
-</ul>
-
-
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-
-
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="#top" aria-label="페이지 맨 위로 이동">
+                <span class="brand-mark" aria-hidden="true">J</span>
+                <span>이자은 · Backend Engineer</span>
+            </a>
+            <nav aria-label="포트폴리오 메뉴">
+                <a href="#about">소개</a>
+                <a href="#experience">경력</a>
+                <a href="#projects">프로젝트</a>
+                <a href="#contact">연락</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- <a class="subscribe-button" href="#subscribe">Search</a> -->
-
-    </div>
-</nav>
-
-    </div>
-</header>
-
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
-
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-
-        <article class="post-full post page ">
-
-            <header class="post-full-header">
-                <h1 class="post-full-title">Portfolio</h1>
-            </header>
-
-
-            <figure class="post-full-image" style="background-image: url(/assets/images/profile.jpg)">
-            </figure>
-
-
-            <section class="post-full-content">
-                <p>목차</p>
-<ul>
-  <li><a href="#profile">1. 프로필</a></li>
-  <li><a href="#프로젝트요약">2. 프로젝트 요약</a></li>
-  <li><a href="#경험기술">3. 경험 기술</a></li>
-  <li><a href="#경력기술서">4. 경력 기술서</a></li>
-  <li><a href="#학력">5. 학력</a></li>
-</ul>
-
-<h1 id="profile">1. 프로필</h1>
-
-<ul>
-  <li>Name : 이 자 은 </li>
-  <li>Phone : 010-7232-8359</li>
-  <li>E-mail : jjaeun2@naver.com</li>
-</ul>
-
-<hr />
-
-<h1 id="프로젝트요약">2. 프로젝트 요약 </h1>
-
-<ul>
-  <li>'펫프렌즈' Backend 개발 (2021.12-재직중) </li>
-  <li>'UserHabit' Backend 개발 (2019.12-2021.07)</li>
-</ul>
-
-<hr />
-
-<h1 id="경험기술">3. 경험 기술</h1>
-
-<ul>
-  <li>Back-End : Spring-boot(kotlin, java) & Webflux, Koa(Node.js), Kafka, AWS (EKS, ECS, EC2, S3) </li>
-  <li>Database : MongoDB (DocumentDB), MariaDB, DynamoDB </li>
-  <li>Etc. : Git, Notion, Jira </li>
-</ul>
-
-<hr />
-
-<h1 id="경력기술서">4. 경력 기술서</h1>
-<br/>
-<h2 id="40-pet-freins-backend-개발">펫프렌즈 2021.12 - 재직중 </h2>
-<h4 id="펫프렌즈-서비스"> 반려동물 사료, 간식, 용품 커머스 서비스 </h4>
-<br/>
-<ul>
-    <h4 id="msa"> MSA 전환 (2023.04~진행중) </h4>
-    <li> CQRS 패턴 및 WebFlux 프레임워크를 도입하여 모놀리식 구조를 MSA 구조로 전환 </li>
-    <li> Server Driven UI 설계로 클라이언트 배포 없이 UI 변경 가능한 구조 구축 </li>
-    <li> Node.js → Java (Spring Boot + WebFlux) 기술 스택 현대화 </li>
-    <li> RDS → DocumentDB 전환, CDC(Change Data Capture) 구현으로 데이터 일관성 보장 </li>
-    <br/>
-    <h4 id="ab-test"> 데이터 기반 A/B 테스트 및 기능 개발 (2021.12~진행중) </h4>
-    <li> 실험 중 80% 이상이 전체 롤아웃에 성공하여 데이터 기반 의사결정 프로세스 검증 </li>
-    <li> 상품 썸네일 GIF 전환 실험, 성능 최적화를 위해 WebP 파일 형식 도입 제안 </li>
-    <li> 쿠폰 할인가 노출 실험 및 쿠폰 이벤트 동기화 처리 </li>
-    <br/>
-    <h4 id="recommendation"> 개인화 추천 시스템 기능 개발 (2023.04~진행중) </h4>
-    <li> 외부 추천 서비스와 실시간 연동 및 데이터 전송 구현 </li>
-    <li> 추천 상품 및 커뮤니티 게시글 전시 영역 노출 기능 개발 </li>
-    <br/>
-    <h4 id="coffee"> 사내 커피 주문 시스템 고도화 (2024.04~2025.03) </h4>
-    <li> Go → Kotlin 언어 마이그레이션으로 팀 기술 스택 통합 </li>
-    <li> EC2-Docker → ECS 전환 및 배포 자동화 </li>
-    <li> Kotest 도입으로 Kotlin 친화적인 테스트 환경 구축 </li>
-    <br/>
-    <h4 id="confluent"> Confluent Cloud PoC (2025.06~2025.08) </h4>
-    <li> Debezium 커넥터 연결 및 CDC 동작 확인, 기존 시스템 영향도 분석 </li>
-    <li> Kafka 메시지 produce/consume 로직 구현 및 성능 테스트 </li>
-    <br/>
-    <h4 id="category"> 카테고리/필터 DB 고도화 (2022.04~2022.11) </h4>
-    <li> 비정규화 데이터 모델 설계, DynamoDB에서 DocumentDB로 마이그레이션 </li>
-    <li> DocumentDB 전환으로 조회 쿼리 성능 2.6배 개선 </li>
-    <br/>
-    <h4 id="pet-registration"> 반려동물 국가 등록 대행 (2022.01~2022.03) </h4>
-    <li> 유저 서명 이미지 KMS 암호화 적용 및 S3 업로드 </li>
-    <li> 등록 신청, 진행 상태 조회 API 개발 및 어드민 백오피스 구축 </li>
-    <br/>
-    <h4 id="legacy"> 레거시 시스템 운영 (2021.12~진행중) </h4>
-    <li> Node.js Koa 프레임워크 기반 어드민 및 기존 서비스 유지보수 </li>
-    <li> MSA 전환 로드맵에 따른 점진적 마이그레이션 진행 </li>
-    <br/>
-    <h4 id="사용-기술"> 사용 기술</h4>
-    <li> Kafka, Springboot(Java, Kotlin), Webflux, Koa(Node.js), DocumentDB, MariaDB, DynamoDB, AWS(ECS, EC2, S3, RDS) </li>
-    <br/>
-</ul>
-
-<h2 id="41-userhabit-backend-개발">UserHabit (유저해빗) 2019.12 - 2021.07</h2>
-<h4 id="유저해빗-서비스"> 사용자의 사용경험(데이터)를 적재하고 분석하여 UI/UX 솔루션을 제공하는 서비스</h4>
-<br/>
-<ul>
-    <h4 id="renewer"> Userhabit 서비스 리뉴얼 개발 참여 </h4>
-    <li> Reactor + Kotlin / MongoDB - Micro Batch 서비스, Api 개발 </li>
-    <li> Vue.js - Client, Server-Side 웹 개발 </li>
-    <br/>
-    <h4 id="saas"> Userhabit 서비스 유지 보수 </h4>
-    <li> Java, Scala Project</li>
-    <li> Elastic Search / MongoDB / PostgreSQL - 사용자 데이터 검색, 집계 및 데이터 베이스 관리 경험</li>
-    <li> HDFS / Kafka - Batch 서비스를 통해 사용자 데이터 적재 및 분석</li>
-    <li> AWS - EC2 / RDS / S3 / Spot - AWS S3 CLI 툴로 사용자 raw 데이터 전송 및 데이터 적재</li>
-    <li> Batch 서비스 유지 보수</li>
-    <li> Ruby on Rails / Coffee Script - 웹 사이트 유지 보수</li>
-    <br/>
-    <h4 id="사용-기술"> 사용 기술</h4>
-    <li> AWS(EC2, S3, RDS), Java, Scala, MongoDB, ElasticSearch, HDFS, Kafka</li>
-    <br/>
-</ul>
-
-<hr />
-<h1 id="학력">5. 학력</h1>
-
-<ul>
-  <li>백석대학교 관광경영학 졸업 3.94/4.5 (2011.03 ~ 2015.02)</li>
-</ul>
-
-<hr />
-
-            </section>
-        </article>
-    </div>
-</main>
-
-<!-- /post -->
-
-<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
-<script>
-$(function() {
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-});
-</script>
-
-
-
-        <!-- Previous/next page links - displayed on every page -->
-
-
-        <!-- The footer at the very bottom of the screen -->
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://jennyleeee.github.io/">Jaeun Portfolio</a> &copy; 2019</section>
-                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
-                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
-                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
-                <nav class="site-footer-nav">
-                    <a href="/">Latest Posts</a>
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                </nav>
+    <main id="content">
+        <section class="hero section" id="top">
+            <div class="profile-card" aria-label="이자은 프로필 사진">
+                <img src="/assets/images/profile.jpg" alt="백엔드 개발자 이자은">
+                <div class="profile-caption">
+                    <span>현재</span>
+                    <strong>펫프렌즈 백엔드 개발자</strong>
+                </div>
             </div>
-        </footer>
+            <div class="hero-copy">
+                <p class="eyebrow">Backend Engineer · 6+ Years</p>
+                <p class="hero-description">
+                    커머스와 데이터 분석 플랫폼을 개발·운영해 온 백엔드 개발자 이자은입니다.
+                    Java와 Spring Boot를 중심으로 MSA 전환, Kafka 기반 데이터 동기화,
+                    CQRS 조회 구조와 개인화 기능을 만들어 왔습니다.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="mailto:jjaeun2@naver.com">이메일 보내기</a>
+                    <a class="button button-secondary" href="https://github.com/jennyleeee" target="_blank" rel="noreferrer">GitHub 보기</a>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <section class="metrics section" aria-label="주요 성과">
+            <article class="metric-card"><strong>6+년</strong><span>백엔드 개발 및 운영</span></article>
+            <article class="metric-card"><strong>2.6배</strong><span>주요 조회 성능 개선</span></article>
+            <article class="metric-card"><strong>80%+</strong><span>A/B 테스트 전체 롤아웃</span></article>
+            <article class="metric-card"><strong>60인</strong><span>AX 인재전쟁 2026 본선 선발</span></article>
+        </section>
 
-    <!-- The big email subscribe modal content -->
+        <section class="section section-grid" id="about">
+            <div class="section-heading">
+                <p class="section-number">01</p>
+                <h2>소개</h2>
+            </div>
+            <div class="section-content intro-copy">
+                <p>
+                    상품·전시 도메인의 모놀리식 구조를 서비스 단위로 분리하고, 신규 MSA와 레거시가
+                    함께 운영되는 환경에서 점진적인 마이그레이션을 수행했습니다. Kafka와 CDC를 이용한
+                    데이터 동기화, BFF와 Server Driven UI, DocumentDB 기반 조회 모델을 경험했습니다.
+                </p>
+                <p>
+                    최근에는 Claude Code와 Codex를 개발, 테스트 설계, 장애 분석과 의사결정 과정에 적용하며
+                    AI를 활용한 개발 생산성 향상에도 관심을 두고 있습니다.
+                </p>
+                <div class="keyword-list" aria-label="주요 경험 키워드">
+                    <span>Commerce MSA</span><span>Event-driven</span><span>CQRS</span>
+                    <span>Personalization</span><span>Service Operations</span><span>AI-assisted Development</span>
+                </div>
+            </div>
+        </section>
 
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="#"></a>
-        <div class="subscribe-overlay-content">
+        <section class="section section-grid" id="experience">
+            <div class="section-heading">
+                <p class="section-number">02</p>
+                <h2>경력</h2>
+            </div>
+            <div class="section-content timeline">
+                <article class="experience-item">
+                    <div class="experience-meta">
+                        <p class="period">2021.12 — 현재</p>
+                        <p class="company-type">반려동물 커머스</p>
+                    </div>
+                    <div class="experience-body">
+                        <div class="experience-title">
+                            <div><h3>펫프렌즈</h3><p>Backend Engineer</p></div>
+                            <span class="status">재직 중</span>
+                        </div>
+                        <p class="experience-summary">
+                            반려동물 사료·간식·용품을 판매하는 커머스 서비스에서 상품·전시 도메인을 중심으로
+                            백엔드 개발과 운영을 담당하고 있습니다.
+                        </p>
+                        <div class="work-list">
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>AI 기반 개발 생산성 및 운영 자동화</h4>
+                                    <span class="work-period">2026.02 — 현재</span>
+                                </div>
+                                <ul>
+                                    <li>AI가 코드베이스 구조와 개발 규칙을 이해할 수 있도록 백엔드 개발 하네스 구축에 참여했습니다.</li>
+                                    <li>Sentry 오류 분석 결과를 Slack으로 전달하고, 기획서에서 테스트 케이스 초안을 생성하는 n8n 워크플로를 개발했습니다.</li>
+                                </ul>
+                            </article>
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>Confluent Cloud 도입 PoC</h4>
+                                    <span class="work-period">2025.06 — 2025.08</span>
+                                </div>
+                                <ul>
+                                    <li>Debezium Connector로 CDC 동작과 기존 시스템 영향도를 확인하고 메시지 발행·소비 애플리케이션을 구현했습니다.</li>
+                                    <li>원본 DB의 CPU 부하, 메시지 누락·중복과 처리 순서를 검증해 기술 도입 의사결정을 지원했습니다.</li>
+                                </ul>
+                            </article>
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>사내 커피 주문 백엔드 시스템 고도화</h4>
+                                    <span class="work-period">2024.04 — 2025.03</span>
+                                </div>
+                                <ul>
+                                    <li>Go 기반 서비스를 Kotlin 특성에 맞게 재설계해 팀의 주요 기술 구조로 통합했습니다.</li>
+                                    <li>EC2·Docker 기반 배포 환경을 AWS ECS로 이전해 배포와 운영 구조를 개선했습니다.</li>
+                                </ul>
+                            </article>
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>상품·전시 도메인 MSA 전환</h4>
+                                    <span class="work-period">2023.04 — 현재</span>
+                                </div>
+                                <ul>
+                                    <li>모놀리식 시스템의 상품·전시 영역을 독립 서비스로 분리하고 Node.js 기반 구조를 Java와 Spring Boot WebFlux 기반으로 전환했습니다.</li>
+                                    <li>BFF와 Server Driven UI를 적용해 클라이언트 요구에 맞는 API와 유연한 화면 구성 구조를 설계했습니다.</li>
+                                    <li>CQRS와 DocumentDB 조회 모델을 구성하고 Kafka·CDC로 원본 데이터와 조회 시스템을 동기화했습니다.</li>
+                                </ul>
+                            </article>
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>개인화 추천 시스템 기능 개발</h4>
+                                    <span class="work-period">2023.04 — 현재</span>
+                                </div>
+                                <ul>
+                                    <li>외부 추천 시스템에 필요한 데이터를 전송하고 실시간 응답을 처리하는 연동 구조를 개발했습니다.</li>
+                                    <li>추천 상품과 커뮤니티 게시글을 전시 영역에 노출할 수 있도록 구조를 확장했습니다.</li>
+                                </ul>
+                            </article>
+                            <details class="more-work">
+                                <summary>이전 업무 보기</summary>
+                                <div class="more-work-content">
+                                    <article class="work-item">
+                                        <div class="work-heading">
+                                            <h4>카테고리·필터 데이터베이스 고도화</h4>
+                                            <span class="work-period">2022.04 — 2022.11</span>
+                                        </div>
+                                        <ul>
+                                            <li>카테고리·필터 데이터를 비정규화 문서 모델로 설계하고 생성·조회·수정·삭제 API를 개발했습니다.</li>
+                                            <li>DynamoDB와 DocumentDB의 성능을 비교한 뒤 DocumentDB로 전환해 주요 조회 성능을 약 2.6배 개선했습니다.</li>
+                                        </ul>
+                                    </article>
+                                    <article class="work-item">
+                                        <div class="work-heading">
+                                            <h4>반려동물 국가 등록 대행 시스템</h4>
+                                            <span class="work-period">2022.01 — 2022.03</span>
+                                        </div>
+                                        <ul>
+                                            <li>등록 신청, 진행 상태 조회와 결과 확인 API 및 관리자 승인·거부 기능을 개발했습니다.</li>
+                                            <li>사용자 서명 이미지를 KMS로 암호화해 S3에 저장하고 정부 등록 시스템과 처리 상태를 연동했습니다.</li>
+                                        </ul>
+                                    </article>
+                                    <article class="work-item">
+                                        <div class="work-heading">
+                                            <h4>데이터 기반 A/B 테스트 및 기능 개발</h4>
+                                            <span class="work-period">2021.12 — 현재</span>
+                                        </div>
+                                        <ul>
+                                            <li>상품 이미지, 할인율과 쿠폰 적용 가격 노출 방식을 검증하는 실험 기능을 개발했습니다.</li>
+                                            <li>참여한 실험의 80% 이상이 전체 사용자 대상 롤아웃으로 이어졌습니다.</li>
+                                        </ul>
+                                    </article>
+                                    <article class="work-item">
+                                        <div class="work-heading">
+                                            <h4>레거시 시스템 운영 및 개선</h4>
+                                            <span class="work-period">2021.12 — 현재</span>
+                                        </div>
+                                        <ul>
+                                            <li>Node.js Koa 기반 서비스의 버그와 데이터 정합성 문제를 해결하고 성능 지표를 모니터링했습니다.</li>
+                                            <li>MSA 전환 계획에 맞춰 레거시 기능을 점진적으로 분리했습니다.</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </article>
 
-            <h1 class="subscribe-overlay-title">Jaeun Portfolio</h1>
-            <p class="subscribe-overlay-description">
-                lunr.js를 이용한 posts 검색 </p>
-            <!--<form method="post" action="/subscribe/" class="">-->
-    <!--<input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />-->
+                <article class="experience-item">
+                    <div class="experience-meta">
+                        <p class="period">2019.12 — 2021.07</p>
+                        <p class="company-type">데이터 분석 플랫폼</p>
+                    </div>
+                    <div class="experience-body">
+                        <div class="experience-title"><div><h3>유저해빗</h3><p>Backend Engineer</p></div></div>
+                        <p class="experience-summary">
+                            사용자 행동 데이터를 수집·분석해 UI·UX 개선 정보를 제공하는 서비스의 백엔드 개발과 운영을 담당했습니다.
+                        </p>
+                        <div class="work-list">
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>Polaris 실시간 데이터 수집 시스템</h4>
+                                    <span class="work-period">2021.03 — 2021.07</span>
+                                </div>
+                                <ul>
+                                    <li>배치 기반 사용자 행동 데이터 수집 구조를 Kafka 기반 실시간 처리 구조로 전환했습니다.</li>
+                                    <li>MongoDB Aggregation Pipeline으로 애플리케이션 집계 로직을 네이티브 쿼리로 대체해 구조를 단순화하고 데이터 반영 시간을 단축했습니다.</li>
+                                </ul>
+                            </article>
+                            <article class="work-item">
+                                <div class="work-heading">
+                                    <h4>플랫폼 운영과 고객사 기술 지원</h4>
+                                    <span class="work-period">2019.12 — 2021.07</span>
+                                </div>
+                                <ul>
+                                    <li>대시보드용 데이터를 집계·가공하고 대용량 데이터 추출, 마이그레이션과 고객사 환경별 설치·배포를 수행했습니다.</li>
+                                    <li>데이터 수집·처리 장애를 분석하고 API 연동과 시스템 사용에 대한 기술 지원을 담당했습니다.</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <!--<div class="form-group">-->
-        <!--<input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />-->
-    <!--</div>-->
-    <!--<button class="" type="submit" disabled><span>Subscribe</span></button>-->
-    <!--<script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>-->
-<!--</form>-->
-<span id="searchform" method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  />
-    <input class="location" type="hidden" name="location"  />
-    <input class="referrer" type="hidden" name="referrer"  />
+        <section class="section section-grid" id="projects">
+            <div class="section-heading"><p class="section-number">03</p><h2>프로젝트</h2></div>
+            <div class="section-content">
+                <article class="project-card">
+                    <div class="project-card-head">
+                        <div>
+                            <p class="project-label">2026.07 · AX 인재전쟁 2026 · 본선 진출</p>
+                            <h3>검증 가능한 의사결정을 만드는 AI 워크플로</h3>
+                        </div>
+                        <span class="project-badge">Finalist 60</span>
+                    </div>
+                    <p class="project-intro">
+                        생성 결과만 보여주는 데모가 아니라, 계산 근거와 승인 과정을 추적할 수 있는 업무용 AI 시스템을 설계했습니다.
+                    </p>
+                    <div class="project-grid">
+                        <section>
+                            <p class="project-step">온라인 예선</p>
+                            <h4>Viral Demand Planner</h4>
+                            <p>판매·재고·바이럴 이벤트 데이터를 결합해 수요 시나리오, 품절 위험, 안전재고와 MOQ 기반 발주 권고를 생성했습니다.</p>
+                            <ul>
+                                <li>Python 계산 엔진을 로컬 MCP 도구로 분리했습니다.</li>
+                                <li>데이터 검증, WAPE 백테스트와 회귀 테스트를 적용했습니다.</li>
+                                <li>사람 승인 단계를 두어 자동 의사결정의 위험을 낮췄습니다.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <p class="project-step">오프라인 본선</p>
+                            <h4>Meditherapy SeedLoop</h4>
+                            <p>인플루언서 후보 선정부터 성과 측정, SCALE·RETEST·STOP 판정과 다음 캠페인 정책 반영까지 연결했습니다.</p>
+                            <ul>
+                                <li>근거 등급과 탐색 비중으로 정책 확장 기준을 명확히 했습니다.</li>
+                                <li>감사 로그와 검토팩 해시로 승인 이후 결과 변조를 방지했습니다.</li>
+                                <li>사람의 검토와 승인을 핵심 단계로 설계했습니다.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <div class="form-group">
-        <input class="subscribe-email" onkeyup="myFunc()"
-               id="searchtext" type="text" name="searchtext"
-               placeholder="Search..." />
-    </div>
-    <script type="text/javascript">
-        function myFunc() {
-            if(event.keyCode == 13) {
-                var url = encodeURIComponent($("#searchtext").val());
-                location.href = "/search.html?query=" + url;
-            }
-        }
-    </script>
-</span>
-        </div>
-    </div>
+        <section class="section section-grid compact-section" aria-labelledby="education-title">
+            <div class="section-heading"><p class="section-number">04</p><h2 id="education-title">학력</h2></div>
+            <div class="section-content education-row">
+                <div><h3>백석대학교</h3><p>관광경영학 · 영어학 복수전공 · 학사</p></div>
+                <p>2011.03 — 2015.02</p>
+            </div>
+        </section>
 
+        <section class="contact section" id="contact">
+            <p class="eyebrow">Contact</p>
+            <h2>함께 해결할 문제가 있다면<br>편하게 연락해 주세요.</h2>
+            <a class="contact-email" href="mailto:jjaeun2@naver.com">jjaeun2@naver.com</a>
+            <div class="contact-links">
+                <a href="mailto:jjaeun2@naver.com">Email</a>
+                <a href="https://github.com/jennyleeee" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </section>
+    </main>
 
-    <!-- highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
-
-    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
-
-
-    <!-- Paginator increased to "infinit" in _config.yml -->
-    <!-- if paginator.posts  -->
-    <!-- <script>
-        var maxPages = parseInt('');
-    </script>
-    <script src="/assets/js/infinitescroll.js"></script> -->
-    <!-- /endif -->
-
-
-
-
-    <!-- Add Google Analytics  -->
-    <!-- Google Analytics Tracking code -->
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-
- </script>
-
-
-    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-
-        <script>
-$(function() {
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-});
-</script>
-
-
-
-    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
-    <!-- ghost_foot -->
-
+    <footer><p>© 2026 이자은</p><a href="#top">맨 위로</a></footer>
 </body>
-<script id="dsq-count-scr" src="//LimHanGyeol-github-io.disqus.com/count.js" async></script>
 </html>
